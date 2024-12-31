@@ -24,9 +24,12 @@ services:
     build: requirements/mariadb
     container_name: mariadb
     volumes:
-      - ./web:/var/www/html
+      - db-data:/var/lib/mysql
     networks:
       inception:
 
 networks:
   inception:
+
+volumes:
+  db-data:
