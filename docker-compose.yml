@@ -8,3 +8,6 @@ services:
   wordpress:
     build: ./requirements/wordpress
     container_name: wordpress
+  mariadb:
+    build: ./requirements/mariadb
+    container_name: mariadb
